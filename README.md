@@ -40,6 +40,7 @@ JavaScript (Vanilla JS)
 
 # Hero Section
 1.Event details,
+</br>
 2.Venue & Date information,
 3.Parent enquiry form,
 4.Animated image galleries,
