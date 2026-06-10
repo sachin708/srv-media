@@ -42,23 +42,25 @@ JavaScript (Vanilla JS)
 1.Event details,
 </br>
 2.Venue & Date information,
+</br>
 3.Parent enquiry form,
+</br>
 4.Animated image galleries,
 # School Categories
 1.Preschool & Early Learning Centers
-<br></br>
+</br>
 2.K-12 CBSE Schools
-<br></br>
+</br>
 3.Heritage & New Age Schools
-<br></br>
+</br>
 4.International Curriculum Schools
 # Participating Schools
 1.Infinite horizontal logo carousel
-<br></br>
+</br>
 2.Alternate scrolling directions
-<br></br>
+</br>
 3.Hover pause functionality
 # Appointment Booking
 1.Pre-schedule school appointments
-<br></br>
+</br>
 2.Reduce event-day waiting time
