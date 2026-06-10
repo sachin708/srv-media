@@ -39,10 +39,10 @@ JavaScript (Vanilla JS)
 # Key Components
 
 # Hero Section
-1.Event details
-2.Venue & Date information
-3.Parent enquiry form
-4.Animated image galleries
+1.Event details,
+2.Venue & Date information,
+3.Parent enquiry form,
+4.Animated image galleries,
 # School Categories
 1.Preschool & Early Learning Centers
 <br></br>
