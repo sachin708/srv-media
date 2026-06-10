@@ -40,18 +40,27 @@ JavaScript (Vanilla JS)
 
 # Hero Section
 1.Event details
+<br></br>
 2.Venue & Date information
+<br></br>
 3.Parent enquiry form
+<br></br>
 4.Animated image galleries
 # School Categories
 1.Preschool & Early Learning Centers
+<br></br>
 2.K-12 CBSE Schools
+<br></br>
 3.Heritage & New Age Schools
+<br></br>
 4.International Curriculum Schools
 # Participating Schools
 1.Infinite horizontal logo carousel
+<br></br>
 2.Alternate scrolling directions
+<br></br>
 3.Hover pause functionality
 # Appointment Booking
 1.Pre-schedule school appointments
+<br></br>
 2.Reduce event-day waiting time
