@@ -1,0 +1,148 @@
+.choose-school {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.choose-school > h4 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
+}
+
+.cards-slider{
+    width:100%;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.school-card {
+    position: relative;
+    flex: 1;
+    min-height: 260px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Gradient */
+.school-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        360deg,
+        #000000 0%,
+        rgba(0,0,0,0) 100%
+    );
+    z-index: 1;
+}
+
+/* Content */
+.school-card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    padding: 16px;
+}
+
+.school-card__content h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: 'Merriweather', serif;
+}
+
+.school-card__content p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Images */
+.card-1 {
+    background-image: url("../assets/choose-school/1.png");
+}
+
+.card-2 {
+    background-image: url("../assets/choose-school/2.png");
+}
+
+.card-3 {
+    background-image: url("../assets/choose-school/3.png");
+}
+
+.card-4 {
+    background-image: url("../assets/choose-school/4.png");
+}
+
+/* Tablet */
+@media (max-width:768px){
+
+    .cards-wrapper{
+        flex-wrap:wrap;
+    }
+
+    .school-card{
+        flex:0 0 calc(50% - 10px);
+    }
+}
+
+/* Dots hidden desktop */
+.mobile-dots{
+    display:none;
+}
+
+/* Mobile Slider */
+@media (max-width:480px){
+
+    .cards-slider{
+        overflow:hidden;
+        width:100%;
+    }
+
+    .cards-wrapper{
+        display:flex;
+        flex-wrap:nowrap !important;
+        gap:0;
+        transition:transform .5s ease;
+    }
+
+    .school-card{
+        flex:0 0 100%;
+        min-width:100%;
+        width:100%;
+        min-height:300px;
+    }
+
+    .mobile-dots{
+        display:flex;
+        justify-content:center;
+        gap:8px;
+        margin-top:20px;
+    }
+
+    .mobile-dot{
+        width:10px;
+        height:10px;
+        border:none;
+        border-radius:50%;
+        background:#d0d0d0;
+        cursor:pointer;
+    }
+
+    .mobile-dot.active{
+        background:#6c3fc5;
+        transform:scale(1.2);
+    }
+}

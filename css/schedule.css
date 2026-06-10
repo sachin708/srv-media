@@ -1,0 +1,239 @@
+/* =========================
+   Schedule Section
+========================= */
+
+.schedule-section {
+  width: 100%;
+  background: #ffffff;
+}
+
+.schedule-wrapper {
+  /* width: 90%;
+  max-width: 1200px; */
+   position: relative;
+  max-height: 400px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: stretch;
+
+  border: 1.5px solid #c8b8f0;
+  overflow: hidden;
+}
+
+/* =========================
+   Left Content
+========================= */
+
+.schedule-content {
+  width: 50%;
+
+  padding: 48px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding-left: 120px;
+
+  background: linear-gradient(
+    270deg,
+    #EAD7FF 45.09%,
+    #f7f4fa 100%
+  );
+}
+
+.schedule-tag {
+  font-size: 13px;
+  font-style: italic;
+  color: #6c3fc5;
+  font-family: 'Inter', sans-serif;
+}
+
+.schedule-title {
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a2e;
+
+  font-family: 'Merriweather', serif;
+}
+
+.schedule-sub {
+  font-size: 14px;
+  font-style: italic;
+  color: #6c3fc5;
+
+  font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+   Button
+========================= */
+
+.schedule-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  width: fit-content;
+
+  padding: 12px 20px;
+
+  background: #2d1a5e;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+
+  transition: 0.3s ease;
+
+  font-family: 'Inter', sans-serif;
+}
+
+.schedule-btn:hover {
+  background: #3d2580;
+}
+
+.schedule-btn img {
+  width: 16px;
+  height: 16px;
+
+  filter: brightness(0) invert(1);
+}
+
+/* =========================
+   Right Image
+========================= */
+
+.schedule-image-side {
+  width: 50%;
+  display: flex;
+}
+
+/* Lavender bleeds from left content into the right image */
+.schedule-image-side::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 14%;              /* how far the fade travels into the photo */
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #e7d6fa 0%,            /* same colour as right edge of left box */
+    transparent 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.schedule-photo {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 768px) {
+
+  .schedule-wrapper {
+    flex-direction: column;
+    max-height: 600px;
+  }
+
+  .schedule-content,
+  .schedule-image-side {
+    width: 100%;
+  }
+
+  .schedule-content {
+    padding: 32px 24px;
+  }
+
+  .schedule-image-side {
+    height: 320px;
+    position: relative;
+  }
+
+  .schedule-title {
+    font-size: 28px;
+  }
+
+  .schedule-image-side::before {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 24%;
+
+    background: linear-gradient(
+      to bottom,
+      #e7d6fa 0%,
+      transparent 100%
+    );
+
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+  .schedule-content {
+    padding: 24px 18px;
+  }
+
+  .schedule-title {
+    font-size: 24px;
+  }
+
+  .schedule-btn {
+    font-size: 11px;
+    padding: 10px 16px;
+  }
+
+  .schedule-image-side {
+    height: 220px;
+    position: relative;
+  }
+
+
+  .schedule-image-side::before {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 24%;
+
+    background: linear-gradient(
+      to bottom,
+      #e7d6fa 0%,
+      transparent 100%
+    );
+
+    z-index: 1;
+    pointer-events: none;
+  }
+}

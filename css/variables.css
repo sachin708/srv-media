@@ -1,0 +1,23 @@
+:root {
+
+  --color-secondary: #F36F21;
+
+  --color-heading: #101828;
+  --color-body: #667085;
+
+  --color-white: #ffffff;
+  --color-bg: #f8fafc;
+
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+
+  --shadow-sm: 0 4px 12px rgba(0,0,0,.08);
+  --shadow-md: 0 10px 30px rgba(0,0,0,.12);
+
+  --container-width: 1280px;
+
+  --transition: all .3s ease;
+
+  --font-primary: 'Poppins', sans-serif;
+}

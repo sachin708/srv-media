@@ -1,0 +1,135 @@
+.participating-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.participating-wrapper > h4 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
+}
+
+.participating-school__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.participating-row {
+    width: 100%;
+    overflow: hidden;
+    padding: 4px 0px;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+/* Cards */
+
+.participating-card {
+    width: 220px;
+    height: 120px;
+
+    padding: 16px;
+
+    background: #fff;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    box-shadow:
+      rgba(0, 0, 0, 0.08) 0px 1px 3px,
+      rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.participating-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Animations */
+
+.marquee-left .marquee-track {
+    animation: scrollLeft 30s linear infinite;
+}
+
+.marquee-right .marquee-track {
+    animation: scrollRight 30s linear infinite;
+}
+
+/* Pause on hover */
+
+.participating-row:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollRight {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .participating-wrapper > h4 {
+        font-size: 28px;
+    }
+
+    .participating-card {
+        width: 180px;
+        height: 100px;
+    }
+
+    .marquee-left .marquee-track,
+    .marquee-right .marquee-track {
+        animation-duration: 20s;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .participating-wrapper > h4 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .participating-card {
+        width: 150px;
+        height: 90px;
+        padding: 12px;
+    }
+
+    .marquee-left .marquee-track,
+    .marquee-right .marquee-track {
+        animation-duration: 15s;
+    }
+}

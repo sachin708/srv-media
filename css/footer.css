@@ -1,0 +1,151 @@
+.footer {
+    background: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
+    color: white;
+    padding: 20px 0 30px;
+}
+
+.footer__grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:16px;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin: 10px 0px;
+}
+
+/* Each info column */
+.footer-col {
+    display: flex;
+    gap: 12px;
+    min-width: 180px;
+    align-items: flex-start;
+}
+
+.footer-col__icon {
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
+    /* background: rgba(255, 255, 255, 0.12); */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-col__icon img {
+    width: 100%;
+    margin-top: 0px;
+    /* height: 100; */
+}
+
+
+.footer-col__text h4 {
+    font-size: 14px;
+    font-weight: 600;
+    /* margin-bottom: 5px; */
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.footer-col__text p {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+}
+
+/* Social section */
+.footer-social {
+    min-width: 120px;
+}
+
+.footer-social h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 38px;
+    /* background: rgba(255, 255, 255, 0.15); */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a img {
+    width: 100%
+}
+
+/* Copyright bar */
+.footer__copyright {
+    text-align: center;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 13px;
+    color: black;
+    background-color: #fff;
+}
+
+/* ── MOBILE (≤768px): stack everything one by one ── */
+@media (max-width: 768px) {
+    .footer__grid {
+        flex-direction: column;
+        /* align-items: center; */
+        width: 80%;
+        gap: 26px;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-col {
+        flex-direction: column;
+        /* align-items: center; */
+        min-width: unset;
+        width: 100%;
+        gap:0px;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-col__icon img {
+        margin-top: 0px;
+
+    }
+
+    .footer-col__icon {
+    margin-top: 0px;
+}
+.footer-col__text h4{
+    margin: 8px 0px;
+  
+}
+}
