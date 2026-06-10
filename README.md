@@ -40,11 +40,8 @@ JavaScript (Vanilla JS)
 
 # Hero Section
 1.Event details
-<br></br>
 2.Venue & Date information
-<br></br>
 3.Parent enquiry form
-<br></br>
 4.Animated image galleries
 # School Categories
 1.Preschool & Early Learning Centers
